@@ -24,6 +24,8 @@ VOLUME ["/conf","/logs"]
 ENV PLUGIN_UPDATES 2015-06-10
 
 RUN bin/logstash-plugin install logstash-input-heartbeat
+RUN bin/logstash-plugin install logstash-input-gelf
 #RUN bin/logstash-plugin install logstash-output-elasticsearch_groom
+RUN bin/logstash-plugin install logstash-output-elasticsearch
 
 CMD ["bin/logstash","-f","/conf/example.conf"]
