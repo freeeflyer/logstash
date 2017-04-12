@@ -4,7 +4,7 @@ MAINTAINER docker.com@xoop.org
 
 RUN apk -U add bash
 
-ENV LOGSTASH_VERSION 5.0.1
+ENV LOGSTASH_VERSION 5.3.0
 ADD https://artifacts.elastic.co/downloads/logstash/logstash-$LOGSTASH_VERSION.tar.gz /tmp/ls.tgz
 
 
